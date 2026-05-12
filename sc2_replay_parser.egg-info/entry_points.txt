@@ -1,2 +1,0 @@
-[console_scripts]
-sc2-replay-parser = sc2_replay_parser.parser:main

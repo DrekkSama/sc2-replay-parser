@@ -1,1 +1,0 @@
-sc2_replay_parser
