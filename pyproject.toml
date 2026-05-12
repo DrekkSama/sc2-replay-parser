@@ -18,3 +18,9 @@ sc2-replay-parser = "sc2_replay_parser.parser:main"
 
 [tool.setuptools.packages.find]
 include = ["sc2_replay_parser*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = [
+    "benchmark: benchmark tests that validate bot behavior from replays",
+]
