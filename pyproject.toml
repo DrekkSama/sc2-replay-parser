@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sc2-replay-parser"
+version = "0.1.0"
+description = "Parse StarCraft II bot replays into structured JSONL data for training and analysis"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+dependencies = [
+    "sc2reader>=1.8.0",
+]
+
+[project.scripts]
+sc2-replay-parser = "sc2_replay_parser.parser:main"
+
+[tool.setuptools.packages.find]
+include = ["sc2_replay_parser*"]
